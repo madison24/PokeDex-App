@@ -29,7 +29,7 @@ pokemonRepository.getAll().forEach(function (pokemon) {
         "(Height:" +
         " " +
         pokemon.height +
-        ") - Wow! that is a big pokemon! " +
+        ") - Wow! That's a big pokemon! " +
         "</p>"
     );
   } else if (pokemon.height) {
