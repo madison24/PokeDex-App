@@ -20,35 +20,28 @@ let pokemonRepository = (function () {
 })();
 
 console.log(pokemonRepository.getAll());
-
-pokemonList.forEach(function (pokemon) {
-  document.write(
-    "<p>" + pokemon.name + " (height: " + pokemon.height + ")" + "</p>"
-  );
-});
-
-//The list of pokemon with text next to the tallest//
-
-/* for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height > 1) {
+pokemonRepository.getAll().forEach(function (pokemon) {
+  if (pokemon.height >= 1) {
     document.write(
       "<p>" +
-        pokemonList[i].name +
-        " (height: " +
-        pokemonList[i].height +
-        ")" +
+        pokemon.name +
         " " +
-        " - Wow, that's big!"
+        "(Height:" +
+        " " +
+        pokemon.height +
+        ") - Wow! that is a big pokemon! " +
+        "</p>"
     );
-  } else {
+  } else if (pokemon.height) {
     document.write(
       "<p>" +
-        pokemonList[i].name +
-        " (height: " +
-        pokemonList[i].height +
-        ")" +
+        pokemon.name +
+        " " +
+        "(Height:" +
+        " " +
+        pokemon.height +
+        ")  " +
         "</p>"
     );
   }
-}
-*/
+});
