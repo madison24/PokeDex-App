@@ -142,3 +142,71 @@ function hideModal() {
   let modalContainer = document.querySelector("#modal-container");
   modalContainer.classList.remove("is-visible");
 }
+
+//contact form
+let nameError = document.getElementById("name-error");
+let emailError = document.getElementById("email-error");
+let messageError = document.getElementById("message-error");
+let sumbitError = document.getElementById("sumbit-error");
+
+//name validation
+function validateName() {
+  let name = document.getElementById("contact-name").value;
+
+  if (name.length == 0) {
+    nameError.innerHTML = "Name is required";
+    return false;
+  }
+  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+    nameError.innerHTML = "Write full name";
+    return false;
+  }
+  nameError.innerHTML = '<i class="fa-solid fa-check"></i>';
+  return true;
+}
+
+//email validation
+function validateEmail() {
+  let email = document.getElementById("contact-email").value;
+
+  if (email.length == 0) {
+    emailError.innerHTML = "Email is required";
+    return false;
+  }
+  if (!email.match(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/gm)) {
+    emailError.innerHTML = "Email Invalid";
+    return false;
+  }
+  emailError.innerHTML = '<i class="fa-solid fa-check"></i>';
+  return true;
+}
+
+//message validation
+function validateMessage() {
+  let message = document.getElementById("contact-message").value;
+  let required = 15;
+  let left = required - message.length;
+
+  if (left > 0) {
+    messageError.innerHTML = left + "more characters required";
+    return false;
+  }
+  messageError.innerHTML = '<i class="fa-solid fa-check"></i>';
+  return true;
+}
+
+//sumbit validate form
+function validateForm() {
+  if (!validateName() || !validateEmail() || !validateMessage()) {
+    sumbitError.style.display = "block";
+    sumbitError.innerHTML = "Please fix error to sumbit";
+    setTimeout(function () {
+      sumbitError.style.display = "none";
+    }, 3000);
+    return false;
+  }
+  if (validateName() && validateEmail() && validateMessage()) {
+    alert("Message sent!");
+    return true;
+  }
+}

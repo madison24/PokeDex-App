@@ -1,15 +1,20 @@
 h1 {
-  margin-left: 40px;
-  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   text-align: center;
+  padding: 20px;
 }
 .button-class {
   border: 1px solid rgb(33, 95, 110);
   background-color: rgb(33, 95, 110);
   padding: 20px;
-  margin-top: 10px;
-  width: 300px;
+  margin: 10px auto;
+  width: 30%;
   color: rgb(248, 248, 236);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .button-class:hover {
   background-color: rgba(33, 95, 110, 70%);
@@ -115,4 +120,72 @@ body {
   margin: auto;
   margin-bottom: 10px;
   text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-group label {
+  flex-basis: 20%;
+}
+
+.input-group input {
+  flex-basis: 50%;
+}
+
+.input-group textarea {
+  flex-basis: 100%;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+.input-group span {
+  position: absolute;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+form button {
+  background: #dc350c;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#sumbit-error {
+  color: red;
+}
+
+.input-group span i {
+  color: seagreen;
 }

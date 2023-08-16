@@ -3,13 +3,60 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <title>Simple JS App</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h1>Pokemon Dex</h1>
     <ul class="pokemon-list"></ul>
+
     <div id="modal-container"></div>
+
+    <h2>Contact</h2>
+
+    <div class="container">
+      <form>
+        <div class="input-group">
+          <label>Name </label>
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            id="contact-name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="contact-email"
+            onkeyup="validateEmail()"
+          />
+          <span id="email-error"></span>
+        </div>
+
+        <div class="input-group">
+          <textarea
+            rows="5"
+            placeholder="Enter your message"
+            id="contact-message"
+            onkeyup="validateMessage()"
+          ></textarea>
+          <span id="message-error"></span>
+        </div>
+
+        <button onclick="return validateForm()">Submit</button>
+        <span id="sumbit-error"></span>
+      </form>
+    </div>
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
