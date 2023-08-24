@@ -22,13 +22,8 @@ let pokemonRepository = (function () {
     let pokemonList = document.querySelector(".pokemon-list");
     let listItem = document.createElement("li");
     let button = document.createElement("button");
-    listItem.classList.add(
-      "list-group-item",
-      "row",
-      "bg-transparent",
-      "border-0"
-    );
-    button.classList.add("btn", "btn-primary", "btn-lg", "button-custom");
+    listItem.classList.add("list-group-item", "bg-transparent", "border-0");
+    button.classList.add("btn", "btn-lg", "button-custom");
     button.innerText = pokemon.name;
     button.setAttribute("data-target", "#modal-container");
     button.setAttribute("data-toggle", "modal");
@@ -204,8 +199,6 @@ function validateForm() {
     return false;
   }
   if (validateName() && validateEmail() && validateMessage()) {
-    // const div = document.querySelector("button");
-    // div.classList.remove("disabled");
     alert("Message sent!");
     return true;
   }
