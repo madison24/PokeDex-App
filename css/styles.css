@@ -21,6 +21,7 @@ h1 {
 
 .button-custom:hover {
   background-color: rgba(33, 95, 110, 70%);
+  color: rgba(33, 95, 110, 70%);
   cursor: pointer;
 }
 
@@ -97,8 +98,8 @@ h1 {
 
 .modal-content {
   border-width: 3px;
-  border-color: #f2ebd6;
-  background-color: #f2ebd6;
+  border-color: #ffffff;
+  background-color: #fafafa;
   display: flex;
   align-items: center;
   align-content: center;
@@ -173,7 +174,7 @@ h2 {
 }
 
 .input-group label {
-  flex-basis: 20%;
+  flex-basis: 10%;
 }
 
 .input-group input {

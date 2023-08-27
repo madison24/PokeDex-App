@@ -19,7 +19,10 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar bg-dark navbar-expand-sm navbar-dark">
+    <nav
+      class="navbar navbar-light navbar-expand-sm"
+      style="background-color: rgb(219, 232, 217)"
+    >
       <a class="navbar-brand" href="#">
         <img
           class="img-fluid"
@@ -40,7 +43,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#"
@@ -54,7 +57,7 @@
       </div>
     </nav>
 
-    <h1>Pokemon Dex</h1>
+    <h1>Pokémon Dex</h1>
 
     <!-- List -->
     <div class="list-group">
@@ -78,7 +81,7 @@
             <h5 class="modal-title" id="modal-title"></h5>
             <button
               type="button"
-              class="close"
+              class="close btn"
               data-dismiss="modal"
               aria-label="Close"
             >
@@ -89,7 +92,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-outline-secondary"
               data-dismiss="modal"
             >
               Close
