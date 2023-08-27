@@ -1,0 +1,272 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html,
+body {
+  font-family: rubik, serif;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Pokemon button */
+.button-custom {
+  border: 1px solid #215f6e;
+  background-color: #215f6e;
+  font-size: 20px;
+  color: white;
+}
+
+.button-custom:hover {
+  background-color: #215f6e;
+  color: rgba(33, 95, 110, 70%);
+  cursor: pointer;
+}
+
+.pokemon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* Modal */
+#container {
+  position: fixed;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* to show it above other content */
+  z-index: 999;
+
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto;
+
+  /* this is used to center the modal */
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* to show it above other content */
+  z-index: 999;
+
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto;
+
+  /* this is used to center the modal */
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+#modal-container {
+  display: none;
+}
+
+/* .modal {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+} */
+
+.modal-dialog {
+  text-align: center;
+}
+
+.modal-content {
+  border-width: 3px;
+  border-color: #ffffff;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 60px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.close {
+  float: right;
+  /* -webkit-appearance: none; */
+  border: 0;
+  background: none;
+  color: #777;
+  cursor: pointer;
+}
+
+.modal h1 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
+
+.modal-img {
+  display: block;
+  margin-left: 44%;
+  margin-right: 50%;
+}
+
+.pokemon-name {
+  margin: auto;
+  margin-bottom: 10px;
+}
+.pokemon-height {
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.pokemon-weight {
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#show-modal {
+  display: none;
+}
+
+/* Form */
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-container {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.input-group {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-group label {
+  -ms-flex-preferred-size: 10%;
+  flex-basis: 10%;
+}
+
+.input-group input {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+}
+
+.input-group textarea {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+::-moz-placeholder {
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+.input-group span {
+  position: absolute;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#sumbit-error {
+  color: red;
+}
+
+.input-group span i {
+  color: seagreen;
+}
