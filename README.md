@@ -11,6 +11,6 @@ Depencies:
 - Promise polyfill
 - Bootstrap
 
-The API used is from https://pokeapi.co/api/v2/pokemon/?limit=150
+The API used is from https://pokeapi.co/api/v2/pokemon/?limit=150.
 
-The URL for the deployed website is https://madison24.github.io/PokeDex-App/
+The URL for the deployed website is https://madison24.github.io/PokeDex-App/.
