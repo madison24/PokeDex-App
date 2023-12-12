@@ -1,4 +1,4 @@
-# PokeDex App
+# JavaScript App
 
 The PokeDex App allows the user to select a pokemon name to pull up a modal with each pokemon height, weight, types and a picture. As well as a contact form to send a message. The app was built with Javascript, HTML, CSS and uses an external API.
 
