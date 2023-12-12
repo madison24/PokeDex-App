@@ -4,7 +4,10 @@ The PokeDex App allows the user to select a pokemon name to pull up a modal with
 
 ## Screenshots 
 
-<img width="900" alt="screenshot" src="">
+![screenshot of the project](./images/main.png)
+![screenshot of the project](./images/screenshot-2.png)
+![screenshot of the project](./images/screenshot-3.png)
+
 
 ## Features:
 
